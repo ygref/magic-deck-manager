@@ -13,4 +13,9 @@ class CardsController < ApplicationController
     )
     render :show
   end
+  def destroy
+    @card = Card.find_by(id: params[:id])
+    @card.destroy
+    render json: { message: "Card deleted!!" }
+  end
 end
