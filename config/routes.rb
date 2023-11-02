@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
   get "/decks" => "decks#index"
-  post "decks" => "decks#create"
-  get "decks/:id" => "decks#show"
-  patch "decks/:id" => "decks#update"
+  post "/decks" => "decks#create"
+  get "/decks/:id" => "decks#show"
+  patch "/decks/:id" => "decks#update"
+  delete "/decks/:id" => "decks#destroy"
 end

@@ -24,4 +24,9 @@ class DecksController < ApplicationController
     )
     render :show
   end
+  def destroy
+    @deck = Deck.find_by(id: params[:id])
+    @deck.destroy
+    render json: { message: "Deck Deleted!!" }
+  end
 end
