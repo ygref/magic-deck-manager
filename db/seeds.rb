@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+
+Deck.create(name: "Affinity", format: "Modern", card_count: 60)
+Deck.create(name: "Prime Speaker", format: "Commander", card_count: 100)
+
+Card.create(name: "Ornithopter", cmc: 0, card_type: "creature",)

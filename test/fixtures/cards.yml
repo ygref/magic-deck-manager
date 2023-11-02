@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cmc: 1
+  card_type: MyString
+  power: 1
+  toughness: 1
+
+two:
+  name: MyString
+  cmc: 1
+  card_type: MyString
+  power: 1
+  toughness: 1
