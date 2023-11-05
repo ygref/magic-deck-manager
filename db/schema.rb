@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_05_181026) do
   end
 
   create_table "decks", force: :cascade do |t|
+    t.integer "user_id"
     t.string "name"
     t.string "format"
     t.integer "card_count"
