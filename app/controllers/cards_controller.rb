@@ -1,4 +1,5 @@
 class CardsController < ApplicationController
+  before_action :authenticate_user
   def index
     @cards = current_user.cards
     render :index
@@ -8,13 +9,20 @@ class CardsController < ApplicationController
     render :show
   end
   def create
-    @card = Card.create(
+    @card = Card.find_or_create_by(
       name: params[:name],
       cmc: params[:cmc],
       card_type: params[:card_type],
       power: params[:power],
       toughness: params[:toughness],
     )
+    if params[:deck_id]
+      @card_deck = CardDeck.find_or_create_by(
+        card_id: @card.id,
+        deck_id: params[:deck_id]
+      )
+      @card_deck.update(quantity: params[:quantity])
+    end
     render :show
   end
 

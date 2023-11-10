@@ -1,15 +1,20 @@
 class DecksController < ApplicationController
+  before_action :authenticate_user
   def index
     @decks = current_user.decks
     render :index
   end
   def create
-    @deck = Deck.create(
+    @deck = current_user.decks.create(
       name: params[:name],
       format: params[:game_format],
       card_count: params[:card_count],
     )
-    render :show
+    if @deck.persisted?  
+      render :show, status: :created
+    else
+      render json: @deck.errors, status: :unprocessable_entity
+    end
   end
   def show
     @deck = Deck.find_by(id: params[:id])
