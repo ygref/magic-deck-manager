@@ -9,6 +9,7 @@ will display in-depth info on the card.
 
 React + Vite, Ruby + Rails, PostgreSQL database, Utilized API: Scryfall API.
 
+## Backend
 
 ## Installation
 
