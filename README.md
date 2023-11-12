@@ -30,3 +30,9 @@ Implement single-button login / OAuth for users for QoL.
 Implement an images table that allows the user to go to a specific card and visually see all possible card images,
 this would be especially helpful to cards in alternate languages.
 Implement more robust pricing logic, to be able to cross reference prices from multiple sources without visual clutter.
+
+<img src="https://github.com/ygref/magic-deck-manager/blob/main/allcards.png?raw=true" alt="All Cards" width="250" /> 
+<img src="https://github.com/ygref/magic-deck-manager/blob/main/cardinfo.png?raw=true" alt="Card Info" width="250" /> 
+<img src="https://github.com/ygref/magic-deck-manager/blob/main/decks.png?raw=true" alt="Decks" width="250" /> 
+<img src="https://github.com/ygref/magic-deck-manager/blob/main/deckmodal.png?raw=true" alt="Deck Modal" width="250" /> 
+<img src="https://github.com/ygref/magic-deck-manager/blob/main/griselbrand.png?raw=true" alt="Griselbrand" width="250" />
