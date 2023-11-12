@@ -15,6 +15,7 @@ class CardsController < ApplicationController
       card_type: params[:card_type],
       power: params[:power],
       toughness: params[:toughness],
+      oracle_text: params[:oracle_text],
     )
     if params[:deck_id]
       @card_deck = CardDeck.find_or_create_by(

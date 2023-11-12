@@ -4,3 +4,4 @@ json.cmc card.cmc
 json.card_type card.card_type
 json.power card.power
 json.toughness card.toughness
+json.oracle_text card.oracle_text
