@@ -31,5 +31,3 @@ CardDeck.create(deck_id: 2, card_id: 5, quantity: 1)
 CardDeck.create(deck_id: 2, card_id: 6, quantity: 1)
 
 
-
-# TODO: WE ARE DOING SEEDS AND WE ARE DROPPING CREATING MIGRATING // DON'T FORGET WE MESSED WITH A TABLE
