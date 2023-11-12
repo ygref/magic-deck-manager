@@ -1,24 +1,36 @@
-# README
+# Magic the Gathering Deck Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Browser based application for deck management and card management.  
+Streamlined for MTG players with QoL in mind.
 
-Things you may want to cover:
+The user can login and create decks, utilize the frontend API to search for card by name, and add the card via pulldown
+by quantity to a specific deck.  On the deck page the cards display minimal information for ease, and on button click
+will display in-depth info on the card.  
 
-* Ruby version
+React + Vite, Ruby + Rails, PostgreSQL database, Utilized API: Scryfall API.
 
-* System dependencies
+## Backend
 
-* Configuration
+## Installation
 
-* Database creation
+```bash
+bundle install
+rails db:create db:migrate db:seed
+```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+```bash
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Roadmap
 
-* Deployment instructions
+Implement single-button login / OAuth for users for QoL.
+Implement an images table that allows the user to go to a specific card and visually see all possible card images,
+this would be especially helpful to cards in alternate languages.
+Implement more robust pricing logic, to be able to cross reference prices from multiple sources without visual clutter.
 
-* ...
+
+
+![screenshot](screenshot.png)
